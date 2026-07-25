@@ -1,0 +1,17 @@
+{
+  "name": "POOJA UC STORE",
+  "short_name": "POOJA UC",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#00c853",
+  "description": "POOJA UC STORE BGMI UC Shop",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

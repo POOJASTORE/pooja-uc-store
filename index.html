@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>POOJA UC STORE</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+
+<header>
+<h1>POOJA UC STORE</h1>
+<p>BGMI UC STORE</p>
+</header>
+
+<button id="installBtn" style="display:none;">
+Install App
+</button>
+
+<h2 class="title">Select UC Plan</h2>
+
+
+<div class="plans">
+
+<div class="card">
+<h3>7500 UC</h3>
+<p>₹1500</p>
+<button onclick="buyPlan(1500,'7500')">Buy Now</button>
+</div>
+
+
+<div class="card">
+<h3>15000 UC</h3>
+<p>₹3000</p>
+<button onclick="buyPlan(3000,'15000')">Buy Now</button>
+</div>
+
+
+<div class="card">
+<h3>30000 UC</h3>
+<p>₹6000</p>
+<button onclick="buyPlan(6000,'30000')">Buy Now</button>
+</div>
+
+
+<div class="card">
+<h3>50000 UC</h3>
+<p>₹10000</p>
+<button onclick="buyPlan(10000,'50000')">Buy Now</button>
+</div>
+
+
+<div class="card">
+<h3>100000 UC</h3>
+<p>₹15000</p>
+<button onclick="buyPlan(15000,'100000')">Buy Now</button>
+</div>
+
+
+<div class="card">
+<h3>150000 UC</h3>
+<p>₹20000</p>
+<button onclick="buyPlan(20000,'150000')">Buy Now</button>
+</div>
+
+</div>
+
+
+<div class="box" id="orderBox">
+
+<h2>Your Order</h2>
+
+<p id="planText">Select Plan First</p>
+
+<input id="uid" placeholder="Enter BGMI UID">
+
+
+<div class="upi">
+
+<h3>Pay UPI</h3>
+
+<p>8279207685@apl</p>
+
+<button onclick="copyUPI()">Copy UPI</button>
+
+</div>
+
+
+<button class="whatsapp" onclick="sendOrder()">
+Payment Done - WhatsApp Order
+</button>
+
+
+<p id="status">
+Order Status: Waiting
+</p>
+
+
+</div>
+
+
+<a class="support" href="https://wa.me/918279207685">
+24/7 Support
+</a>
+
+
+<script src="script.js"></script>
+
+
+<script>
+
+if("serviceWorker" in navigator){
+navigator.serviceWorker.register("service-worker.js");
+}
+
+</script>
+
+
+</body>
+</html>

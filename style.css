@@ -1,0 +1,222 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+    background:#050505;
+    color:white;
+    padding-bottom:80px;
+}
+
+
+
+header{
+    text-align:center;
+    padding:25px;
+    background:linear-gradient(135deg,#00c853,#004d20);
+    border-radius:0 0 30px 30px;
+}
+
+
+header h1{
+    font-size:28px;
+}
+
+
+header p{
+    margin-top:8px;
+    color:#d7ffd7;
+}
+
+
+
+.title{
+    text-align:center;
+    margin:20px 0;
+    color:#00ff88;
+}
+
+
+
+.plans{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    padding:15px;
+
+}
+
+
+
+.card{
+
+    background:#151515;
+    padding:20px 10px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 0 15px rgba(0,255,100,0.2);
+
+}
+
+
+
+.card h3{
+
+    color:#00ff88;
+    font-size:20px;
+
+}
+
+
+.card p{
+
+    font-size:22px;
+    margin:12px;
+
+}
+
+
+
+button{
+
+    background:#00c853;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:12px;
+    font-weight:bold;
+    width:100%;
+
+}
+
+
+
+button:active{
+
+    transform:scale(0.95);
+
+}
+
+
+
+
+.box{
+
+    margin:20px;
+    padding:20px;
+    background:#111;
+    border-radius:25px;
+    box-shadow:0 0 20px rgba(0,255,100,0.3);
+
+}
+
+
+
+.box h2{
+
+    text-align:center;
+    color:#00ff88;
+    margin-bottom:15px;
+
+}
+
+
+
+#planText{
+
+    text-align:center;
+    margin:15px;
+}
+
+
+
+input{
+
+    width:100%;
+    padding:15px;
+    background:#222;
+    color:white;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+    margin-bottom:15px;
+
+}
+
+
+
+.upi{
+
+    background:#1c1c1c;
+    padding:15px;
+    text-align:center;
+    border-radius:15px;
+
+}
+
+
+
+.upi p{
+
+    color:#00ff88;
+    font-size:18px;
+    margin:10px;
+
+}
+
+
+
+
+.whatsapp{
+
+    margin-top:20px;
+    background:#25D366;
+
+}
+
+
+
+#status{
+
+    text-align:center;
+    margin-top:20px;
+    color:#ffc107;
+
+}
+
+
+
+
+.support{
+
+    position:fixed;
+    bottom:20px;
+    right:20px;
+
+    background:#25D366;
+    color:white;
+
+    padding:15px 20px;
+    border-radius:50px;
+
+    text-decoration:none;
+    font-weight:bold;
+
+    box-shadow:0 0 15px #25D366;
+
+}
+
+
+
+@media(max-width:500px){
+
+.plans{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
