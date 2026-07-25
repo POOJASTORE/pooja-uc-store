@@ -1,1 +1,0 @@
-# pooja-uc-store
